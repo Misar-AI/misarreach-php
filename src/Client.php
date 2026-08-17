@@ -28,6 +28,7 @@ class Client
     public readonly PipelineResource      $pipeline;
     public readonly SalesAgentResource    $salesAgent;
     public readonly SettingsResource      $settings;
+    public readonly PlanResource          $plan;
     public readonly WorkspacesResource    $workspaces;
     public readonly CampaignTemplatesResource $campaignTemplates;
     public readonly DeliverabilityResource    $deliverability;
@@ -68,6 +69,7 @@ class Client
         $this->pipeline      = new PipelineResource($this);
         $this->salesAgent    = new SalesAgentResource($this);
         $this->settings      = new SettingsResource($this);
+        $this->plan = new PlanResource($this);
         $this->workspaces    = new WorkspacesResource($this);
         $this->campaignTemplates = new CampaignTemplatesResource($this);
         $this->deliverability    = new DeliverabilityResource($this);
